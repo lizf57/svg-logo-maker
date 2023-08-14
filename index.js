@@ -45,3 +45,45 @@ function writeToFile(fileName, answers) {
     });
 }
 
+// Function to prompt questions for user input
+function promptUser() {
+    inquirer
+        .prompt([
+            // shape
+            {
+                name: 'shape',
+                type: 'list',
+                message: 'Choose the logo shape.',
+                choices: ['Cirle', 'Triangle', 'Square']
+            },
+            // shapeColor
+            {
+                name: 'shapeColor',
+                type: 'input',
+                message: 'Type the color keyword or hexadecimal for the logo shape color',
+            },
+            // text
+            {
+                name: 'text',
+                type: 'input',
+                message: 'Type up to three characters to use as the text display on the logo.',
+            },
+            // text color
+            {
+                name: 'textColor',
+                type: 'input',
+                message: 'Type the color keyword or hexadecimal for the logo text color.',
+            },
+        ])
+        //  error prompt if user enters more than 3 characters
+        .then((answers) => {
+            if (answers.text.length > 3) {
+                console.log('Text value must be three characters or less.');
+                promptUser();
+            } else {
+                writeToFile('logo.svg', answers);
+            }
+        });
+}
+
+promptUser();
