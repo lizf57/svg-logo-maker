@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "node index.js",
-    "test": "jest"
+    "test":  "NODE_OPTIONS=--experimental-vm-modules npx jest"
   },
   "repository": {
     "type": "git",
@@ -26,5 +26,8 @@
   },
   "devDependencies": {
     "jest": "^29.6.2"
-  }
+  },
+  "jest": {
+    "transform": {}
+   }
 }

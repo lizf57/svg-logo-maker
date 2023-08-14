@@ -31,7 +31,7 @@ function writeToFile(fileName, answers) {
     }
 
     // uses users input to choose text and color (dimensions found from svg logo example)
-    svgString += `<text x="150" y="125" font-size="60" text-anchor="middle" fill="${answers.textColor}">${answers.text}</text>`;
+    svgString += `<text x="150" y="125" font-size="40" text-anchor="middle" fill="${answers.textColor}">${answers.text}</text>`;
     // closing tags
     svgString += "</g>";
     svgString += "</svg>";
