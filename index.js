@@ -6,7 +6,6 @@ const fs = require('fs');
 
 // import shape classes
 const {Circle, Triangle, Square} = require('./lib/shapes');
-const { time } = require('console');
 
 // Function to write SVG file 
 function writeToFile(fileName, answers) {
