@@ -59,7 +59,7 @@ function promptUser() {
             {
                 name: 'shapeColor',
                 type: 'input',
-                message: 'Type the color keyword or hexadecimal for the logo shape color',
+                message: 'Type a color keyword or hexadecimal for the logo shape color',
             },
             // text
             {
