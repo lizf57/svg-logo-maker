@@ -19,7 +19,7 @@ function writeToFile(fileName, answers) {
 
     // uses users input to choose shape and the color (dimensions found from svg logo example)
     let setShape;
-    if (answers.shape === 'Circle'){
+    if (answers.shape === 'Circle') {
         setShape = new Circle();
         svgString += `<circle cx="150" cy="100" r="80" fill="${answers.shapeColor}" />`;
     } else if (answers.shape === 'Triangle') {
@@ -31,7 +31,7 @@ function writeToFile(fileName, answers) {
     }
 
     // uses users input to choose text and color (dimensions found from svg logo example)
-    svgString += `<text x="150" y="125" font-size="40" text-anchor="middle" fill="${answers.textColor}">${answers.text}</text>`;
+    svgString += `<text x="150" y="120" font-size="45" text-anchor="middle" fill="${answers.textColor}">${answers.text}</text>`;
     // closing tags
     svgString += "</g>";
     svgString += "</svg>";
