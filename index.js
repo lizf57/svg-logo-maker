@@ -14,8 +14,7 @@ function writeToFile(fileName, answers) {
     svgString = '<svg width="300" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">';
     // g element to group svg shape together 
     svgString += "<g>";
-    // user input to svg file
-    svgString += `${answers.shape}`
+
 
     // uses users input to choose shape and the color (dimensions found from svg logo example)
     let setShape;
