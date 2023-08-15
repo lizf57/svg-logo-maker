@@ -6,6 +6,7 @@ The purpose of this application was to create a simple logo generator using Node
 
 Watch a walkthrough [video](https://drive.google.com/file/d/1T7FaXC-UlPSGX-Y_U5WKp88WdFFDrE9L/view?usp=sharing) demonstrating the functionality of the application and its tests.
 
+![screenshot](./examples/images/coverphoto.png)
 
   ## Table of Contents
   * [Installation](#installation)
