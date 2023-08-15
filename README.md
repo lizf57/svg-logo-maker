@@ -4,7 +4,7 @@
 The purpose of this application was to create a simple logo generator using Node JS. The application functions through Node JS command line using Inquirer for collecting input from the user to generate a logo to be saved as an SVG file. The user can select a logo shape (circle, triangle, or square), a shape color, add text to the logo (must be three characters or less), and change the text color.
 
 
-Watch a walkthrough [video](https://drive.google.com/file/d/1T7FaXC-UlPSGX-Y_U5WKp88WdFFDrE9L/view?usp=sharing) demonstrating the functionality of the application and its tests.
+Watch a walkthrough [video](https://drive.google.com/file/d/1PcJ1v1PY14JT5l4VSkEcgZ-DhHoauW6O/view?usp=sharing) demonstrating the functionality of the application and its tests.
 
 ![screenshot](./examples/images/coverphoto.png)
 
