@@ -9,6 +9,7 @@ const {Circle, Triangle, Square} = require('./lib/shapes');
 
 // Function to write SVG file 
 function writeToFile(fileName, answers) {
+    console.log(answers.shape)
     let svgString = "";
     // 300x200 pixel image 
     svgString = '<svg width="300" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">';
@@ -20,6 +21,7 @@ function writeToFile(fileName, answers) {
     // uses users input to choose shape and the color (dimensions found from svg logo example)
     let setShape;
     if (answers.shape === 'Circle') {
+        console.log('hello')
         setShape = new Circle();
         svgString += `<circle cx="150" cy="100" r="80" fill="${answers.shapeColor}" />`;
     } else if (answers.shape === 'Triangle') {
@@ -53,7 +55,7 @@ function promptUser() {
                 name: 'shape',
                 type: 'list',
                 message: 'Choose the logo shape.',
-                choices: ['Cirle', 'Triangle', 'Square']
+                choices: ['Circle', 'Triangle', 'Square']
             },
             // shapeColor
             {
